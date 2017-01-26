@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+import argparse
+
+class ArgumentPlease(argparse.ArgumentParser):
+    def parze_args(self):
+        return self.parse_args()
+
+def parze_args():
+    parzer = ArgumentPlease(description='jaggedletter helper scripts.')
+    return parzer.parze_args()
+
+def main():
+    parze_args()
+
+if __name__ == '__main__':
+    main()
+
